@@ -8,9 +8,16 @@ In this section we'll obtain our reference data and our reads.
 
 The following steps will walk you through how to run the tools. In each step certain parameters are set. If a parameter option appears on the screen but this tutorial doesn't mention how to set it, leave it at the default. There are questions throughout, which serve to guide you through the results and check your understanding.
 
+## Log into Galaxy
+1. Connect to Tufts Network, either on campus or via VPN
+2. Visit https://galaxy.cluster.tufts.edu/
+3. Log in with you cluster username and password
+4. In another browser window go to course workflow: https://rbatorsky.github.io/intro-to-galaxy-ngs-sarscov2/
+<img src="../img/data/two_screens.png" width="200">
+
 
 ## Create a new history
-- Click the **+** at the top of the history panel
+- Click the **+** at the top of the history panel which is on the right hand side
 - To rename the history, click on the box **Unnamed History** and type **ngs data workshop** and press enter
 
 <img src="../img/data/new_history.png" width="200">
