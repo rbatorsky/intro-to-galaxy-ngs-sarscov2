@@ -1,19 +1,38 @@
+{::options parse_block_html="true" /}
+
+
+<div class="panel panel-info">
+**Note**
+{: .panel-heading}
+<div class="panel-body">
+
+NOTE DESCRIPTION
+
+</div>
+</div>
+
+
 # Intro to NGS data analysis with Galaxy 
 
 The introductory [Slides](../slides/workshop_22Nov21.pdf) give an overview of our goals.
-
-## Obtaining our Data
-Our dataset is a SARS-COV2 Delta variant sample. 
-In this section we'll obtain our reference data and our reads.
-
-The following steps will walk you through how to run the tools. In each step certain parameters are set. If a parameter option appears on the screen but this tutorial doesn't mention how to set it, leave it at the default. There are questions throughout, which serve to guide you through the results and check your understanding.
 
 ## Log into Galaxy
 1. Connect to Tufts Network, either on campus or via VPN
 2. Visit https://galaxy.cluster.tufts.edu/
 3. Log in with you cluster username and password
-4. In another browser window go to course workflow: https://rbatorsky.github.io/intro-to-galaxy-ngs-sarscov2/
-<img src="../img/data/two_screens.png" width="200">
+4. In another browser window go to course website: [https://rbatorsky.github.io/intro-to-galaxy-ngs-sarscov2/](https://rbatorsky.github.io/intro-to-galaxy-ngs-sarscov2/)
+5. If you have one monitor, here is a suggested screen layout to follow the tutorial
+
+
+<img src="../img/data/two_screens.png" width="700">*Suggested screen layout*
+
+
+## Obtaining our Data
+Our dataset is a SARS-CoV-2 Delta variant sample. 
+In this section we'll obtain our reference data and our reads.
+
+The following steps will walk you through how to run the tools. In each step certain parameters are set. If a parameter option appears on the screen but this tutorial doesn't mention how to set it, leave it at the default. There are questions throughout, which serve to guide you through the results and check your understanding.
+
 
 
 ## Create a new history
@@ -24,14 +43,17 @@ The following steps will walk you through how to run the tools. In each step cer
 
 ## Import the SARS-CoV2 genome and gene annotation from NCBI
 - On the left hand side tool panel, click the **Upload icon**
-<img src="../img/data/upload.png" width="700">
+<img src="../img/data/upload.png" width="200">
 
 - Click **Paste/Fetch data"**
+
 <img src="../img/data/paste_fetch.png" width="700">
 
 - Paste the following urls in the grey box:
+```
 https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.fna.gz
 https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.gff.gz
+```
 
 - Click **Start** followed by **Close**
 
