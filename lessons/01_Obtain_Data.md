@@ -100,7 +100,7 @@ We'll download the data from Sequence Read Archive using a Galaxy tool called **
 - Under **Accession** enter `SRR15607266`
 - Click **Execute**
 
-<img src="../img/data/fasterq.png" "width="700">
+<img src="../img/data/fasterq.png" width="700">
 
 - The result will be four items in History
   - Log: information about the total reads downloaded
