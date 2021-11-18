@@ -97,7 +97,7 @@ We are interested in obtaining reads from the sample [Viral genomic RNA sequenci
 We'll download the data from Sequence Read Archive using a Galaxy tool called **SRA Toolkit**.
 
 - In the Tool panel (left hand side) search box, search for a tool called "fasterq" and click on the tool under **SRA toolkit** called **Faster Download and Extract Reads in FASTQ**
-- Under **Accession** enter SRR15607266
+- Under **Accession** enter `SRR15607266`
 - Click **Execute**
 
 <img src="../img/data/fasterq.png" "width="700">
