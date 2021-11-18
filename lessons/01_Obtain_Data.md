@@ -108,7 +108,7 @@ We'll download the data from Sequence Read Archive using a Galaxy tool called **
   - Single-end data: Empty, since this experiment has no single-end files
   - Paired-end data: Two files 
   
-<img src="../img/data/fasterq_result.png" "width="700">
+<img src="../img/data/fasterq_result.png" width="700">
 
 ### Fastq format
 Fastq format is a way to store both sequence data and information about the quality of each sequenced position
