@@ -2,8 +2,9 @@
 
 The introductory [Slides](../slides/workshop_22Nov21.pdf) give an overview of our goals.
 
-## Step 1: Log into Galaxy
+## Step 1: Galaxy Setup
 
+### Log in to Galaxy
 1. Connect to Tufts Network, either on campus or via VPN
 
 2. Visit https://galaxy.cluster.tufts.edu/
@@ -18,19 +19,19 @@ The introductory [Slides](../slides/workshop_22Nov21.pdf) give an overview of ou
 <img src="../img/data/two_screens.png" width="900">*Suggested screen layout*
 
 
-## Obtaining our Data
-Our dataset is a SARS-CoV-2 Delta variant sample. 
-In this section we'll obtain our reference data and our reads.
-
-The following steps will walk you through how to run the tools. In each step certain parameters are set. If a parameter option appears on the screen but this tutorial doesn't mention how to set it, leave it at the default. There are questions throughout, which serve to guide you through the results and check your understanding.
-
-
-
-## Create a new history
-- Click the **+** at the top of the history panel which is on the right hand side
-- To rename the history, click on the box **Unnamed History** and type **ngs data workshop** and press enter
+### Create a new history
+- Click the **+** at the top of the history panel, on the right hand side of the screen
+- To rename the history, click on the box **Unnamed History**, type **ngs data workshop**, and press enter
 
 <img src="../img/data/new_history.png" width="200">
+
+
+
+## Obtaining our Data
+Our dataset is a SARS-CoV-2 Next Generation Sequencing sample. In this section we'll obtain our reference data and our reads.
+
+The following steps will walk you through how to run the tools. In each step certain parameters are set. If a parameter option appears on the screen but this tutorial doesn't mention how to set it, leave it at the default. 
+
 
 ## Import the SARS-CoV2 genome and gene annotation from NCBI
 - On the left hand side tool panel, click the **Upload icon**

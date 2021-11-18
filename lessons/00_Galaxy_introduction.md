@@ -65,6 +65,6 @@ Galaxy is a web-based platform for running data analysis and integration, geared
 
 <img src="../img/galaxy_intro/featurecounts.png" width="700">
 
-[Next: Setup](01_Introduction_and_Setup.md)
+[Next: Obtain Data](01_Obtain_Data.md)
 
 [Previous: Repository Home](../README.md)
