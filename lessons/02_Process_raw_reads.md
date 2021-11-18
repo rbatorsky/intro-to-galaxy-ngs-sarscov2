@@ -1,5 +1,8 @@
 # Perform Quality Control on Raw Reads
 
+The following steps will walk you through how to run the tools. In each step certain parameters are set. If a parameter option appears on the screen but this tutorial doesn't mention how to set it, leave it at the default. 
+
+
 # Introduction to FastQC
 
 FastQC provides several modules (as discussed in intro [Slides](../slides/slides_workshop_12Apr21.pdf))

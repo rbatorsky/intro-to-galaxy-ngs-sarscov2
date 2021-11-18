@@ -26,40 +26,40 @@ The introductory [Slides](../slides/workshop_22Nov21.pdf) give an overview of ou
 <img src="../img/data/new_history.png" width="200">
 
 
-
 ## Step 2: Obtaining our Data
-Our dataset is a SARS-CoV-2 Next Generation Sequencing sample. In this section we'll obtain our reference data and our reads and prepare for alignment.
+Our dataset is a SARS-CoV-2 Next Generation Sequencing sample. In this section we'll obtain our reference data and our NGS reads in preparation for alignment.
 
-The following steps will walk you through how to run the tools. In each step certain parameters are set. If a parameter option appears on the screen but this tutorial doesn't mention how to set it, leave it at the default. 
 
 ### Import the SARS-CoV2 genome and gene annotation from NCBI
 - On the left hand side tool panel, click the **Upload icon**
+
 <img src="../img/data/upload.png" width="200">
 
 - Click **Paste/Fetch data**
 
-- Paste the following urls, which specify the location of the original SARS-CoV-2 Alpha genome, in the grey box:
+- We will download our reference data for the original SARS-CoV-2 genome from NCBI, via the commonly used  [https://ftp.ncbi.nlm.nih.gov/genomes/](https://ftp.ncbi.nlm.nih.gov/genomes/). Paste the following URLs in the grey box:
+
 ```
 https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.fna.gz
 https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.gff.gz
 ```
 
 - This is what you should see:
+
 <img src="../img/data/upload_final.png" width="700">
 
 - Click **Start** followed by **Close**
 
 - Two jobs will appear in the History, Grey (pending) -> Orange (running) -> Green (complete).
 
-- Rename the genome and give the file the correct format
+- Rename the genome and give the file the correct Datatype. A datatype in Galaxy determines how tools will handle Datasets.
   - On the green box for the file ending in fna.gz, click on the **pencil icon**
   - replacing the URL in the name with "genome"
   - clicking **Save**
   - Click on the **Datatypes** tab, and under **New Type** type fasta (Note: careful not to select the datatype fasta.gz)
   - Click **Change Datatype**
 
-
-- Rename the genes and give the file the correct format
+- Rename the genes and give the file the correct Datatype
   - On the green box for the file ending in gff.gz, click on the **pencil icon**
   - Replacing the URL in the name with "genes"
   - clicking **Save**
@@ -72,37 +72,52 @@ https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM9858
 
 
 ### Fasta Format
-Let's have a look at the format for the genome sample 
-Fasta format has two parts, a sequence identified preceeded by a ">" symbol, followed by the sequence.
+The virus genome is in Fasta format.
+Fasta format has two parts, a sequence identifier preceeded by a ">" symbol, followed by the sequence on subsequent lines.
+You can see a preview of it by clicking on the **genome** dataset in the History panel.
+
 <img src="../img/data/genome_view_2.png" width="700">
 
 ### GFF Format
-To preview the GFF file, click on the  **eye** icon.
-This format tells us where features such as genes and exons are located in the reference genome.
-<img src="../img/data/genome_view_gff.png
+The Generic Feature Format (GFF) file tells us where features such as genes and exons are located in the reference genome.
+To preview the GFF file, click on the  **eye** icon on the **genes** dataset.
+Note that we must always be sure that our gene information and genome come from the same source.
 
-## Import Sequence data from Sequence Read Archive
-We'll download a some data from SRA of the delta variant using the SRR number.
+<img src="../img/data/genome_view_gff.png" width="700">
+
+## Step 3:Import NGS sequencing data from Sequence Read Archive
+
+We are interested in obtaining reads from the sample [Viral genomic RNA sequencing of a B.1.617.2/Delta isolate; Severe acute respiratory syndrome coronavirus 2; RNA-Seq](https://www.ncbi.nlm.nih.gov/sra/?term=SRR15607266)
+
 <img src="../img/data/srr.png
 
-- Search for Tool in Tool panel called "fasterq" and click on the tool under "SRA toolkit" called "Faster Download and Extract Reads in FASTQ"
+### Download Reads
+
+We'll download the data from Sequence Read Archive using a Galaxy tool called **SRA Toolkit**.
+
+- In the Tool panel (left hand side) search box, search for a tool called "fasterq" and click on the tool under **SRA toolkit** called **Faster Download and Extract Reads in FASTQ**
 - Under **Accession** enter SRR15607266
 - Click **Execute**
-<img src="../img/data/fasterq.png
 
-The result will be four items in History
-<img src="../img/data/fasterq_result.png
+<img src="../img/data/fasterq.png" "width="700">
 
-1. Log: containing information about the total reads downloaded
-2. Other data: Empty, but can contain experiment metadata
-3. Single-end data: Empty, since this experiment has no single-end files
-4. Paired-end data: Two files 
+- The result will be four items in History
+  - Log: containing information about the total reads downloaded
+  - Other data: Empty, but can contain experiment metadata
+  - Single-end data: Empty, since this experiment has no single-end files
+  - Paired-end data: Two files 
+  
+<img src="../img/data/fasterq_result.png" "width="700">
 
-## View Fastq files
-- Click on the list **Pair-end data (fasterq-dump)** and the sublist **SRR15607266** to expand the sample, you’ll see 2 sequencing files **forward** and **reverse**
-- Click on the **eye icon** <img src="../img/data/eye.png" width="15"> on the first sequence file **forward** and look at the fastq reads
+### Fastq format
+Fastq format is a way to store both sequence data and information about the quality of each sequenced position
 
-The paired end data contains two files, forward and reverse reads for our sample.
+- To view:
+  - Click on the list **Pair-end data (fasterq-dump)** and the sublist **SRR15607266** to expand the sample, you’ll see 2 sequencing files **forward** and **reverse**
+
+  - Click on the **eye icon** <img src="../img/data/eye.png" width="15"> on the first sequence file **forward** and look at the fastq reads
+
+  - The paired end data contains two files, forward and reverse reads for our sample.
 
 
 The first 4 lines constitute the first sequencing read:
