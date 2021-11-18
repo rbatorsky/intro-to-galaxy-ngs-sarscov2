@@ -33,37 +33,37 @@ Our dataset is a SARS-CoV-2 Next Generation Sequencing sample. In this section w
 The following steps will walk you through how to run the tools. In each step certain parameters are set. If a parameter option appears on the screen but this tutorial doesn't mention how to set it, leave it at the default. 
 
 ### Import the SARS-CoV2 genome and gene annotation from NCBI
-- On the left hand side tool panel, click the <img src="../img/data/upload_icon.png width="20">
+- On the left hand side tool panel, click the <img src="../img/data/upload_icon.png width="20"> 
 <img src="../img/data/upload.png" width="200">
 
-- Click **Paste/Fetch data"**
+- Click **Paste/Fetch data**
 
-<img src="../img/data/paste_fetch.png" width="700">
-
-- Paste the following urls in the grey box:
+- Paste the following urls, which specify the location of the original SARS-CoV-2 Alpha genome, in the grey box:
 ```
 https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.fna.gz
 https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.gff.gz
 ```
+
+- This is what you should see:
 
 - Click **Start** followed by **Close**
 
 - Two jobs will appear in the History, Grey (pending) -> Orange (running) -> Green (complete).
 
 - Rename the genome and give the file the correct format
--- On the green box for the file ending in fna.gz, click on the **pencil icon**
--- replacing the URL in the name with "genome"
--- clicking **Save**
--- Click on the **Datatypes** tab, and under **New Type** type fasta
--- Click **Change Datatype**
+  - On the green box for the file ending in fna.gz, click on the **pencil icon**
+  - replacing the URL in the name with "genome"
+  - clicking **Save**
+  - Click on the **Datatypes** tab, and under **New Type** type fasta
+  - Click **Change Datatype**
 
 
 - Rename the genes and give the file the correct format
--- On the green box for the file ending in gff.gz, click on the **pencil icon**
--- Replacing the URL in the name with "genes"
--- clicking **Save**
--- Click on the **Datatypes** tab, and under **New Type** type gff3
--- Click **Change Datatype**
+  - On the green box for the file ending in gff.gz, click on the **pencil icon**
+  - Replacing the URL in the name with "genes"
+  - clicking **Save**
+  - Click on the **Datatypes** tab, and under **New Type** type gff3
+  - Click **Change Datatype**
 
 
 ### Fasta Format
