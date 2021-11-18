@@ -1,30 +1,21 @@
-{::options parse_block_html="true" /}
-
-
-<div class="panel panel-info">
-**Note**
-{: .panel-heading}
-<div class="panel-body">
-
-NOTE DESCRIPTION
-
-</div>
-</div>
-
-
 # Intro to NGS data analysis with Galaxy 
 
 The introductory [Slides](../slides/workshop_22Nov21.pdf) give an overview of our goals.
 
-## Log into Galaxy
+## Step 1: Log into Galaxy
+
 1. Connect to Tufts Network, either on campus or via VPN
+
 2. Visit https://galaxy.cluster.tufts.edu/
+
 3. Log in with you cluster username and password
-4. In another browser window go to course website: [https://rbatorsky.github.io/intro-to-galaxy-ngs-sarscov2/](https://rbatorsky.github.io/intro-to-galaxy-ngs-sarscov2/)
+
+4. In another browser window go to course website: 
+[https://rbatorsky.github.io/intro-to-galaxy-ngs-sarscov2/](https://rbatorsky.github.io/intro-to-galaxy-ngs-sarscov2/)
+
 5. If you have one monitor, here is a suggested screen layout to follow the tutorial
 
-
-<img src="../img/data/two_screens.png" width="700">*Suggested screen layout*
+<img src="../img/data/two_screens.png" width="900">*Suggested screen layout*
 
 
 ## Obtaining our Data
