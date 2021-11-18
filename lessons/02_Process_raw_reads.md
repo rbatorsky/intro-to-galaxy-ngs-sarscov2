@@ -78,4 +78,4 @@ Steps to run:
 
 [Next: Read Alignment](03_Read_alignment.md)
 
-[Previous: Setup](01_Introduction_and_Setup.md)
+[Previous: Obtain Data](01_Obtain_Data.md)
