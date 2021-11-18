@@ -1,4 +1,4 @@
-# Intro to NGS data analysis with Galaxy 
+# Obtaining the Reference data and NGS Sequencing data from public repositories
 
 The introductory [Slides](../slides/workshop_22Nov21.pdf) give an overview of our goals.
 
@@ -86,7 +86,8 @@ Note that we must always be sure that our gene information and genome come from 
 <img src="../img/data/gff_view.png" width="900">
 
 
-## Step 3:Import NGS sequencing data from Sequence Read Archive
+
+## Step 3: Import NGS sequencing data from Sequence Read Archive
 
 We are interested in obtaining reads from the sample [Viral genomic RNA sequencing of a B.1.617.2/Delta isolate; Severe acute respiratory syndrome coronavirus 2; RNA-Seq](https://www.ncbi.nlm.nih.gov/sra/?term=SRR15607266)
 
@@ -106,12 +107,12 @@ We'll download the data from Sequence Read Archive using a Galaxy tool called **
   - Log: information about the total reads downloaded
   - Other data: Empty, but can contain experiment metadata
   - Single-end data: Empty, since this experiment has no single-end files
-  - Paired-end data: Two files 
+  - Paired-end data: Two files, containing the forward and reverse reads for this sample 
   
 <img src="../img/data/fasterq_result.png" width="200">
 
 ### Fastq format
-Fastq format is a way to store both sequence data and information about the quality of each sequenced position
+Fastq format is a way to store both sequence data and information about the quality of each sequenced position.
 
 - To view:
   - Click on the list **Pair-end data (fasterq-dump)** and the sublist **SRR15607266** to expand the sample, you’ll see 2 sequencing files **forward** and **reverse**
@@ -133,6 +134,8 @@ NTTATCTACTTTTATTTCAGCAGCTCGGCAAGGGTTTGTTGATTCAGATGTAGAAACTAAAGATGTTGTTGAATGT
 2. Sequence
 3. \+ (optionally lists the sequence identifier again)
 4. Quality string
+
+Paired end sequencing data will typically be stored as two fastq files, one for the forward and one for the reverse.  Each file should contain the same number of reads, with the same labels, in the same order. If this convention is not followed, it could cause errors with downstream tools. Fortunately there are tools such as [BBTools Repair](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/repair-guide/) that can help restore pairing information.
 
 ### Base Quality Scores
 
