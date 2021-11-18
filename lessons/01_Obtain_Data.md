@@ -33,7 +33,7 @@ Our dataset is a SARS-CoV-2 Next Generation Sequencing sample. In this section w
 The following steps will walk you through how to run the tools. In each step certain parameters are set. If a parameter option appears on the screen but this tutorial doesn't mention how to set it, leave it at the default. 
 
 ### Import the SARS-CoV2 genome and gene annotation from NCBI
-- On the left hand side tool panel, click the <img src="../img/data/upload_icon.png width="20"> 
+- On the left hand side tool panel, click the **Upload icon**
 <img src="../img/data/upload.png" width="200">
 
 - Click **Paste/Fetch data**
@@ -45,6 +45,7 @@ https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM9858
 ```
 
 - This is what you should see:
+<img src="../img/data/upload_final.png" width="700">
 
 - Click **Start** followed by **Close**
 
@@ -54,7 +55,7 @@ https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM9858
   - On the green box for the file ending in fna.gz, click on the **pencil icon**
   - replacing the URL in the name with "genome"
   - clicking **Save**
-  - Click on the **Datatypes** tab, and under **New Type** type fasta
+  - Click on the **Datatypes** tab, and under **New Type** type fasta (Note: careful not to select the datatype fasta.gz)
   - Click **Change Datatype**
 
 
@@ -62,8 +63,12 @@ https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM9858
   - On the green box for the file ending in gff.gz, click on the **pencil icon**
   - Replacing the URL in the name with "genes"
   - clicking **Save**
-  - Click on the **Datatypes** tab, and under **New Type** type gff3
+  - Click on the **Datatypes** tab, and under **New Type** type gff3 and select it from the dropdown menu (Note: careful not to select the datatype gff3.gz)
   - Click **Change Datatype**
+
+- Here is what you should see in your History
+
+<img src="../img/data/history_1.png" width="200">
 
 
 ### Fasta Format
