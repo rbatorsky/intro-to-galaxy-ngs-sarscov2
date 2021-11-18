@@ -76,14 +76,14 @@ The virus genome is in Fasta format.
 Fasta format has two parts, a sequence identifier preceeded by a ">" symbol, followed by the sequence on subsequent lines.
 You can see a preview of it by clicking on the **genome** dataset in the History panel.
 
-<img src="../img/data/genome_view_2.png" width="700">
+<img src="../img/data/genome_view_2.png" width="900">
 
 ### GFF Format
 The Generic Feature Format (GFF) file tells us where features such as genes and exons are located in the reference genome.
 To preview the GFF file, click on the  **eye** icon on the **genes** dataset.
 Note that we must always be sure that our gene information and genome come from the same source.
 
-<img src="../img/data/genome_view_gff.png" width="700">
+<img src="../img/data/gff_voew.png" width="700">
 
 ## Step 3:Import NGS sequencing data from Sequence Read Archive
 
