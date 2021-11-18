@@ -80,16 +80,17 @@ You can see a preview of it by clicking on the **genome** dataset in the History
 
 ### GFF Format
 The Generic Feature Format (GFF) file tells us where features such as genes and exons are located in the reference genome.
-To preview the GFF file, click on the  **eye** icon on the **genes** dataset.
+To preview the GFF file, click on the  <img src="../img/data/eye.png" width="15"> on the **genes** dataset.
 Note that we must always be sure that our gene information and genome come from the same source.
 
-<img src="../img/data/gff_view.png" width="700">
+<img src="../img/data/gff_view.png" width="900">
+
 
 ## Step 3:Import NGS sequencing data from Sequence Read Archive
 
 We are interested in obtaining reads from the sample [Viral genomic RNA sequencing of a B.1.617.2/Delta isolate; Severe acute respiratory syndrome coronavirus 2; RNA-Seq](https://www.ncbi.nlm.nih.gov/sra/?term=SRR15607266)
 
-<img src="../img/data/srr.png
+<img src="../img/data/srr.png" width="900">
 
 ### Download Reads
 
@@ -102,7 +103,7 @@ We'll download the data from Sequence Read Archive using a Galaxy tool called **
 <img src="../img/data/fasterq.png" "width="700">
 
 - The result will be four items in History
-  - Log: containing information about the total reads downloaded
+  - Log: information about the total reads downloaded
   - Other data: Empty, but can contain experiment metadata
   - Single-end data: Empty, since this experiment has no single-end files
   - Paired-end data: Two files 
@@ -115,7 +116,7 @@ Fastq format is a way to store both sequence data and information about the qual
 - To view:
   - Click on the list **Pair-end data (fasterq-dump)** and the sublist **SRR15607266** to expand the sample, you’ll see 2 sequencing files **forward** and **reverse**
 
-  - Click on the **eye icon** <img src="../img/data/eye.png" width="15"> on the first sequence file **forward** and look at the fastq reads
+  - Click on the <img src="../img/data/eye.png" width="15"> on the first sequence file **forward** and look at the fastq reads
 
   - The paired end data contains two files, forward and reverse reads for our sample.
 
@@ -133,7 +134,7 @@ NTTATCTACTTTTATTTCAGCAGCTCGGCAAGGGTTTGTTGATTCAGATGTAGAAACTAAAGATGTTGTTGAATGT
 3. + (optionally lists the sequence identifier again)
 4. Quality string
 
-## Base Quality Scores
+### Base Quality Scores
 
 The symbols we see in the read quality string are an encoding of the quality score:
 
