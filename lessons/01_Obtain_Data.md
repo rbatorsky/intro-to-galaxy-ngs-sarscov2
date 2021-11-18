@@ -131,7 +131,7 @@ NTTATCTACTTTTATTTCAGCAGCTCGGCAAGGGTTTGTTGATTCAGATGTAGAAACTAAAGATGTTGTTGAATGT
 
 1. Sequence identifier
 2. Sequence
-3. + (optionally lists the sequence identifier again)
+3. \+ (optionally lists the sequence identifier again)
 4. Quality string
 
 ### Base Quality Scores
