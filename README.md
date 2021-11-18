@@ -8,7 +8,7 @@ For support with this workshop or Tufts Galaxy, see our [Galaxy documentation](h
 
 The workshop has the following steps
 
-<img src="img/intro/workflow.png" width="500">
+<img src="img/intro/workflow.png" width="300">
 
 ### Materials Needed
 - Chrome web browser
