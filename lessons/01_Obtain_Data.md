@@ -5,16 +5,16 @@ The introductory [Slides](../slides/workshop_22Nov21.pdf) give an overview of ou
 ## Step 1: Galaxy Setup
 
 ### Log in to Galaxy
-1. Connect to Tufts Network, either on campus or via VPN
+- Connect to Tufts Network, either on campus or via VPN
 
-2. Visit https://galaxy.cluster.tufts.edu/
+- Visit https://galaxy.cluster.tufts.edu/
 
-3. Log in with you cluster username and password
+- Log in with you cluster username and password
 
-4. In another browser window go to course website: 
+- In another browser window go to course website: 
 [https://rbatorsky.github.io/intro-to-galaxy-ngs-sarscov2/](https://rbatorsky.github.io/intro-to-galaxy-ngs-sarscov2/)
 
-5. If you have one monitor, here is a suggested screen layout to follow the tutorial
+- If you have one monitor, here is a suggested screen layout to follow the tutorial
 
 <img src="../img/data/two_screens.png" width="900">*Suggested screen layout*
 
@@ -27,14 +27,13 @@ The introductory [Slides](../slides/workshop_22Nov21.pdf) give an overview of ou
 
 
 
-## Obtaining our Data
-Our dataset is a SARS-CoV-2 Next Generation Sequencing sample. In this section we'll obtain our reference data and our reads.
+## Step 2: Obtaining our Data
+Our dataset is a SARS-CoV-2 Next Generation Sequencing sample. In this section we'll obtain our reference data and our reads and prepare for alignment.
 
 The following steps will walk you through how to run the tools. In each step certain parameters are set. If a parameter option appears on the screen but this tutorial doesn't mention how to set it, leave it at the default. 
 
-
-## Import the SARS-CoV2 genome and gene annotation from NCBI
-- On the left hand side tool panel, click the **Upload icon**
+### Import the SARS-CoV2 genome and gene annotation from NCBI
+- On the left hand side tool panel, click the <img src="../img/data/upload_icon.png width="20">
 <img src="../img/data/upload.png" width="200">
 
 - Click **Paste/Fetch data"**
