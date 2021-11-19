@@ -23,6 +23,8 @@ BWA produces a file in Sequence Alignment Map (SAM) format or the compressed ver
 
 [Image Source](www.samformat.info)
 
+## Downsample BAM for quicker viewing
+
 
 ## View bam file using JBrowse
 
@@ -32,20 +34,19 @@ BWA produces a file in Sequence Alignment Map (SAM) format or the compressed ver
 
 - Next we'll add two Track groups, each with an annotation track
   - Under **Track Group** click **Insert Track Group**
+  - Under **Annotation Track** click **Insert Annotation Track**
+  - First we'll add the GFF track:  Under **Track Type** select **GFF/GFF3/BED Features** and under **GFF/GFF3/BED Track Data** select **genes**.
   - Under **Track Category** type “bam files”
-  - Click **Insert Annotation Track**
-  - Select track type **BAM Pileups** and under **BAM Track Data** click the folder icon and select the list **RNA STAR on collection: mapped.bam**
-  - Again, click **Insert Track Group**
-  - Under **Track Category** type “genes”
-  - Click **Insert Annotation Track**
-  - Select track type **GFF/GFF3/BED Features** and under **GFF/GFF3/BED Track Data** select **hg38_genes.bed**.
+  - Next, well add the BAM track, so again click **Insert Annotation Track**
+  - Select track type **BAM Pileups** and under **BAM Track Data** click the folder icon and select the list **15: Map with BWA on collection 3**
+  - Under **Autogenerate SNP Track** click **Yes**
 
 - Finally, run the job:
   - Scroll down and click **Execute**.
   - Once the job is complete (green) click the eye icon to view the data.
-  - In the **Available Tracks** panel select the HIV and Mock samples from 12 hr, as well as the bed file.
+  - In the **Available Tracks** panel select **genes**.
 
-<img src="../img/jbrowse_available_tracks.png" width="200">
+<img src="../img/align/available_tracks.png" width="200">
 
 - We'll zoom in on one gene **MYC**. To do this, click on the search bar to the left of the **Go** button and type `chr8:127735434-127742951` 
 - The bam tracks will show the reads that align to the region for each sample. 
