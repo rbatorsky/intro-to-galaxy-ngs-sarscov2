@@ -33,7 +33,11 @@ Our dataset is a SARS-CoV-2 Next Generation Sequencing sample. In this section w
 ### Import the SARS-CoV2 genome and gene annotation from a Shared Data library on our server
 - On the top menu bar, click **Shared Data** and select **Data Libraries**
 - Select **sars-cov-2 genome and annotation**
-- Select both files by checking the box next to Name (or checking box next two both files)
+- Select both files by checking the box next to Name
+<p align="center">
+<img src="../img/data/import_from_shared.png" width="200">
+</p>
+
 - Just under the top menu bar, next to the search bar, click **Export to History** and select **As Datasets**
 - In the **Import into History** keep the current Selected History and click **Import**
 - Click on **Galaxy Tufts** on the top left to go back to the main panel
@@ -46,38 +50,47 @@ You’ll see two datasets in your history.
 ### Fasta Format
 The virus genome is in gzipped fasta format with the extension **fna.gz**. Fasta format has two parts, a sequence identifier preceeded by a ">" symbol, followed by the sequence on subsequent lines. You can see a preview of it by clicking on the **GCF_009858895.2_ASM985889v3_genomic.fna.gz** dataset in the History panel.
 
+<p align="center">
 <img src="../img/data/genome_view_2.png" width="900">
+</p>
 
 ### GFF Format
 The Generic Feature Format (GFF) file tells us where features such as genes and exons are located in the reference genome.
 To preview the GFF file, click on the  <img src="../img/eye.png" width="15"> on the **GCF_009858895.2_ASM985889v3_genomic.gff** dataset.
 Note that we must always be sure that our gene information and genome come from the same source.
-
+<p align="center">
 <img src="../img/data/gff_view.png" width="900">
+</p>
+
 
 ## Step 3: Import NGS sequencing data from Sequence Read Archive
 
 We are interested in obtaining reads from the sample [Viral genomic RNA sequencing of a B.1.617.2/Delta isolate; Severe acute respiratory syndrome coronavirus 2; RNA-Seq](https://www.ncbi.nlm.nih.gov/sra/?term=SRR15607266)
-
+<p align="center">
 <img src="../img/data/srr.png" width="900">
+</p>
 
 ### Download Reads
 
 We'll download the data from Sequence Read Archive using a Galaxy tool called **SRA Toolkit**.
 
-- In the Tool panel (left hand side) search box, search for a tool called "fasterq" and click on the tool under **SRA toolkit** called **Faster Download and Extract Reads in FASTQ**
+- In the Tool panel (left hand side) search box, type in "fasterq" and click on the tool under **SRA toolkit** called **Faster Download and Extract Reads in FASTQ**
 - Under **Accession** enter `SRR15607266`
 - Click **Execute**
 
+<p align="center">
 <img src="../img/data/fasterq.png" width="500">
+</p>
 
 - The result will be four items in History
   - Log: information about the total reads downloaded
   - Other data: Empty, but can contain experiment metadata
   - Single-end data: Empty, since this experiment has no single-end files
   - Paired-end data: Two files, containing the forward and reverse reads for this sample 
-  
+
+<p align="center">
 <img src="../img/data/fasterq_result.png" width="200">
+</p>
 
 ### Fastq format
 Fastq format is a way to store both sequence data and information about the quality of each sequenced position.
@@ -109,11 +122,15 @@ Paired end sequencing data will typically be stored as two fastq files, one for 
 
 The symbols we see in the read quality string are an encoding of the quality score:
 
+<p align="center">
 <img src="../img/data/base_qual_0.png" width="500">
+</p>
 
 A quality score is a prediction of the probability of an error in base calling: 
 
+<p align="center">
 <img src="../img/data/base_qual_1.png" width="750">
+</p>
 
 Going back to our read, we can see that for most of our read the quality score is "G" –> "Q" =  38 -> Probability < 1/1000 of an error.
 
