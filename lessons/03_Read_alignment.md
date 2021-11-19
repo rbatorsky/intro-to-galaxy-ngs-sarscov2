@@ -21,11 +21,11 @@ To run BWA:
 - Under **Use the following dataset as the reference sequence** select **1:genome (as fasta)**
 - Under **Select input type** select **Paired fastq collection** 
 - Under **Select a paired collection** select **3: Pair-end data (fasterq-dump)**
-- Your choices will look like this:
-
-<img src="../img/align/bwa.png" width="800">
-
+- Check that your tool is configured as below
 - Click **Execute**
+
+<img src="../img/align/bwa.png" width="800">*Configuration of BWA*
+
 
 ## SAM format
 BWA produces a file in Sequence Alignment Map (SAM) format or the compressed version BAM.
