@@ -17,11 +17,12 @@ BWA builds an index of the reference sequence.
 ### To run BWA:
 - In the Tools panel search bar, type **BWA** and under the **Mapping** section, select **Map with BWA**
 - Under **Will you select a reference genome from your history or use a built-in index?** select **Use a genome from history and build index**.
-- Under **Use the following dataset as the reference sequence** select **1:genome (as fasta)**
+- Under **Use the following dataset as the reference sequence** select **1: genome (as fasta)**
 - Under **Select input type** select **Paired fastq collection** 
-- Under **Select a paired collection** select **3: Pair-end data (fasterq-dump)**
+- Under **Select a paired collection** select **4: Pair-end data (fasterq-dump)**
 - Check that your tool is configured as below
 - Click **Execute**
+- Once the job is completed, you can preview the resulting SAM file by clicking the <img src="../img/eye.png" width="15"> icon in the completed **Map with BWA** dataset.
 
 <p align="center">
 <img src="../img/align/bwa.png" width="700">
@@ -29,8 +30,6 @@ BWA builds an index of the reference sequence.
 <p align="center">
 Configuration of BWA
 </p>
-
-- Once the job is completed, you can preview the resulting SAM file by clicking the <img src="../img/eye.png" width="15"> icon in the completed **Map with BWA** dataset.
 
 ### SAM format
 BWA produces a BAM file, which is the compressed binary version of a Sequence Alignment Map (SAM). A SAM file consists of a Header section and an Alignment section. The Header section gives details about the file format and reference sequenced used in alignment, and the Alignment section gives information about each read that was aligned.
@@ -49,7 +48,7 @@ Before we view our alignment, we'll downsample our BAM file to contain only a fr
 
 - In the Tool panel search bar, type "downsample"
 - Under **Picard**, select **Downsample SAM/BAM**
-- In the Main panel, under **Select SAM/BAM dataset or dataset collection** click the folder icon <img src="../img/download.png" width="15"> and select **15: Map with BWA on collection 3**
+- In the Main panel, under **Select SAM/BAM dataset or dataset collection** click the folder icon <img src="../img/download.png" width="15"> and select **Map with BWA on collection 3**
 - Under **Probability (between 0 and 1) that any given read will be kept** type 0.1 and press enter
 - Click **Execute**
 
@@ -72,16 +71,33 @@ JBrowse is a convenient tool that allows viewing of alignments, genomes and gene
   - Scroll down and click **Execute**.
 
 ### Open JBrowse viewer
-  - Once the job is complete (green) click the <img src="../img/eye.png" width="15"> icon on the JBrowse dataset.
-  - In the **Available Tracks** panel select **genes**.
-
+- Once the job is complete (green) click the <img src="../img/eye.png" width="15"> icon on the JBrowse dataset.
+- In the **Available Tracks** panel select **genes uncompressed**.
+<p align="center">
 <img src="../img/align/available_tracks.png" width="200">
+</p>
+- In the center panel, you will see genome and gene features. We'll click and drag on the Genome coordinates bar in order to zoom in on the S protein region indicated below.
+<p align="center">
+<img src="../img/align/view_1.png" width="1000">
+</p>
+- One can also type exact coordinates into the search bar. After the colon, type 22,991 and hit enter.
+<p align="center">
+<img src="../img/align/view_2.png" width="1000">
+</p>
+- This shows us now a close up of our reference sequence, both forward and reverse, as well as three reading frames.
+- This region contains one of the 4 SNP that differentiate the delta from the alpha variant (T478K). To see if this sample contains the SNP, select the two remaining tracks 
+  - **SRR15607266** 
+  - **SRR15607266 - SNPs/Coverage**
+- We should see one variant represented both in the aligned reads as well as the coverage track.
+<p align="center">
+<img src="../img/align/view_3.png" width="1000">
+</p>
 
-- We'll zoom in on one gene **MYC**. To do this, click on the search bar to the left of the **Go** button and type `chr8:127735434-127742951` 
-- The bam tracks will show the reads that align to the region for each sample. 
-- The color will show whether the read aligns to the + or –strand and grey lines show splice regions where a read spans an intron. 
-The gene track at the bottom called **hg38_genes.bed** will show 6 features of EGR1, by clicking on them you will be able to see the different feature types (exon, CDS, start_codon, stop_codon).
+- The **SRR15607266 - SNPs/Coverage** track plots the number of reads aligned at each position, and additionally shows SNP that are present in >20% of the aligned reads.
+- The **SRR15607266** shows each aligned read, coloring forward and reverse reads in blue and red, respectively, and indicating mismatches with the reference genome. Information about individual reads is available by clicking on the read.
 
-<img src="../img/jbrowse_myc.png" width="900">
+- We can check other positions to confirm that we have a delta variant sample:
+  -P681R: 23,606 
+  -L452R: 22,919
 
 [Previous: Process Raw Reads](02_Process_raw_reads.md)
