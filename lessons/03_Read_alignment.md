@@ -1,9 +1,15 @@
 # Read Alignment
 
-Read Alignment is the process of comparing short reads with a reference genome to find the best-matching position.
-**BWA** is a fast and accurate tool for short alignment, and **JBrowse** can view the result of the alignment in Galaxy.
+Read Alignment is the process of comparing short reads with a reference genome to find the best-matching position. The Burrows-Wheeler Aligner (**BWA**) is a fast and accurate tool for both short and long read alignment, and **JBrowse** is a tool that enables viewing of the alignment results in Galaxy.
 
-## Step 1: BWA-MEM
+
+## Step 1: BWA alignmnent
+
+The naive method of comparing each read in our dataset to each position in the reference sequence is too slow. Therefore, **BWA** builds an index of the reference sequence, which can be thought of as a lookup table for substrings present in our reference sequence. A short read can be compared to this lookup table in order to find potential matches.
+
+<img src="../img/align/bwa_index.png" width="800">
+
+To run BWA:
 - In the Tools panel search bar, type **BWA** and under the **Mapping** section, select **Map with BWA**
 - Under **Will you select a reference genome from your history or use a built-in index?** select **Use a genome from history and build index**.
 - Under **Use the following dataset as the reference sequence** select **1:genome (as fasta)**
@@ -14,7 +20,6 @@ Read Alignment is the process of comparing short reads with a reference genome t
 <img src="../img/align/bwa.png" width="800">
 
 - Click **Execute**
-
 
 ## SAM format
 BWA produces a file in Sequence Alignment Map (SAM) format or the compressed version BAM.

@@ -31,9 +31,9 @@ The [Introduction Slides](../slides/workshop_22Nov21.pdf) give an overview of th
 
 - Click to expand the second list **FastQC on collection 3: Webpage**
 - Click on the collection **SRR15607266**
-- Click on the <img src="../img/process/eye.png" width="15"> next to the first file for sample **forward**. The first table gives **Basic Statistics** of the sample. The Main panel will show metrics and plots. You may have to adjust the size of the panel in order to view.
+- Click on the <img src="../img/process/eye.png" width="15"> icon next to the first file for sample **forward**. The first table gives **Basic Statistics** of the sample. The Main panel will show metrics and plots. You may have to adjust the size of the panel in order to view.
 
-<img src="../img/process/fastqc_result_1.png" width="900">
+<img src="../img/process/fastqc_result_1.png" width="700">
 
 
 ### (Optional) Trim adapters and low quality read ends with Trim Galore!
