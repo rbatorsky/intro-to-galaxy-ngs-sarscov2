@@ -18,7 +18,9 @@ The [Introduction Slides](../slides/workshop_22Nov21.pdf) give an overview of th
 - Select **FastQC Read Quality reports** under **FASTQ Quality Control**
 - In the **Main** panel, under **Short read data from your current history** select the folder icon <img src="../img/process/download.png" width="15"> and the dataset **3:Pair-end data (fasterq-dump)** will appear as an option
 
-<img align="center" src="../img/process/fastqc1.png" width="500">
+<p align="center">
+<img src="../img/process/fastqc1.png" width="500">
+</p>
 
 - Scroll down and click **Execute**.The job should first appear orange and then green after a minute or so.
 - The result will be two lists, one containing the raw data and one the webpage (html) results for convenient viewing in the browser.
