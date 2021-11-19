@@ -14,7 +14,7 @@ The naive method of comparing each read in our dataset to each position in the r
 BWA builds an index of the reference sequence.
 </p>
 
-###To run BWA:
+### To run BWA:
 - In the Tools panel search bar, type **BWA** and under the **Mapping** section, select **Map with BWA**
 - Under **Will you select a reference genome from your history or use a built-in index?** select **Use a genome from history and build index**.
 - Under **Use the following dataset as the reference sequence** select **1:genome (as fasta)**
@@ -24,18 +24,24 @@ BWA builds an index of the reference sequence.
 - Click **Execute**
 
 <p align="center">
-<img src="../img/align/bwa.png" width="800">
+<img src="../img/align/bwa.png" width="700">
 </p>
 <p align="center">
 Configuration of BWA
 </p>
 
+- Once the job is completed, you can preview the resulting SAM file by clicking the <img src="../img/eye.png" width="15"> icon in the completed **Map with BWA** dataset.
+
 ### SAM format
-BWA produces a file in Sequence Alignment Map (SAM) format or the compressed version BAM.
+BWA produces a BAM file, which is the compressed binary version of a Sequence Alignment Map (SAM). A SAM file consists of a Header section and an Alignment section. The Header section gives details about the file format and reference sequenced used in alignment, and the Alignment section gives information about each read that was aligned.
 
-<img src="../img/sam_format.jpeg" width="800">
+<p align="center">
+<img src="../img/align/sam_format.jpeg" width="800">
+</p>
+<p align="center">
+Image Source https://www.samformat.info/
+</p>
 
-[Image Source](www.samformat.info)
 
 ## Downsample BAM for quicker viewing
 
@@ -43,17 +49,17 @@ Before we view our alignment, we'll downsample our BAM file to contain only a fr
 
 - In the Tool panel search bar, type "downsample"
 - Under **Picard**, select **Downsample SAM/BAM**
-- In the Main panel, under **Select SAM/BAM dataset or dataset collection** click the folder icon <img src="../img/process/download.png" width="15"> and select **15: Map with BWA on collection 3**
+- In the Main panel, under **Select SAM/BAM dataset or dataset collection** click the folder icon <img src="../img/download.png" width="15"> and select **15: Map with BWA on collection 3**
 - Under **Probability (between 0 and 1) that any given read will be kept** type 0.1 and press enter
 - Click **Execute**
 
 ## View Downsampled BAM file using JBrowse
+JBrowse is a convenient tool that allows viewing of alignments, genomes and gene annotation within the Galaxy interface.
 
-JBrowse is a conveniet tool that allows viewing of alignments, genomes and gene annotation within the Galaxy interface.
-
+### Configure JBrowse viewer
 - In the **Tools** panel search bar, type **JBrowse** and select **JBrowse genome browser**
 - Under **Reference genome to display** select **Use a genome from history**
-- Under **Select the reference genome** select **1: genome (as fasta)**
+- Under **Select the reference genome** select **genome (as fasta)**
 
 - Next we'll add two Track groups, each with an annotation track
   - Under **Track Group** click **Insert Track Group**
@@ -61,12 +67,12 @@ JBrowse is a conveniet tool that allows viewing of alignments, genomes and gene 
   - First we'll add the GFF track:  Under **Track Type** select **GFF/GFF3/BED Features** and under **GFF/GFF3/BED Track Data** select **genes**.
   - Under **Track Category** type “bam files”
   - Next, well add the BAM track, so again click **Insert Annotation Track**
-  - Select track type **BAM Pileups** and under **BAM Track Data** click the folder icon <img src="../img/process/download.png" width="15"> and select the list **15: Map with BWA on collection 3**
-  - Under **Autogenerate SNP Track** click **Yes**
-
-- Finally, run the job:
+  - Select track type **BAM Pileups** and under **BAM Track Data** click the folder icon <img src="../img/download.png" width="15"> and select the list **Downsample SAM/BAM on collection 15: downsampled BAM**
+  - Under **Autogenerate SNP Track** click **Yes** (SNP = Single Nucleotide Polymorphism. This will enable us to view changes in the sequence data with respect to the reference sequence)
   - Scroll down and click **Execute**.
-  - Once the job is complete (green) click the eye icon to view the data.
+
+### Open JBrowse viewer
+  - Once the job is complete (green) click the <img src="../img/eye.png" width="15"> icon on the JBrowse dataset.
   - In the **Available Tracks** panel select **genes**.
 
 <img src="../img/align/available_tracks.png" width="200">

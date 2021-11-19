@@ -16,7 +16,7 @@ The [Introduction Slides](../slides/workshop_22Nov21.pdf) give an overview of th
 
 - In the **Tools** panel search bar, type **FastQC**
 - Select **FastQC Read Quality reports** under **FASTQ Quality Control**
-- In the **Main** panel, under **Short read data from your current history** select the folder icon <img src="../img/process/download.png" width="15"> and the dataset **3:Pair-end data (fasterq-dump)** will appear as an option
+- In the **Main** panel, under **Short read data from your current history** select the folder icon <img src="../img/download.png" width="15"> and the dataset **3:Pair-end data (fasterq-dump)** will appear as an option
 
 <p align="center">
 <img src="../img/process/fastqc1.png" width="500">
@@ -31,7 +31,7 @@ The [Introduction Slides](../slides/workshop_22Nov21.pdf) give an overview of th
 
 - Click to expand the second list **FastQC on collection 3: Webpage**
 - Click on the collection **SRR15607266**
-- Click on the <img src="../img/process/eye.png" width="15"> icon next to the first file for sample **forward**. The first table gives **Basic Statistics** of the sample. The Main panel will show metrics and plots. You may have to adjust the size of the panel in order to view.
+- Click on the <img src="../img/eye.png" width="15"> icon next to the first file for sample **forward**. The first table gives **Basic Statistics** of the sample. The Main panel will show metrics and plots. You may have to adjust the size of the panel in order to view.
 
 <img src="../img/process/fastqc_result_1.png" width="700">
 
@@ -39,7 +39,7 @@ The [Introduction Slides](../slides/workshop_22Nov21.pdf) give an overview of th
 ### (Optional) Trim adapters and low quality read ends with Trim Galore!
 - In the **Tools** panel search bar, type **Trim Galore!**
 - Select **Trim Galore!** under **FASTQ Quality Control**
-- Under **Reads in FASTQ format** click the <img src="../img/process/download.png" width="15"> and select **3: Pair-end data (fasterq-dump)**
+- Under **Reads in FASTQ format** click the <img src="../img/download.png" width="15"> and select **3: Pair-end data (fasterq-dump)**
 - Scroll down and click **Execute**.
 - The result will be a single collection titled **Trim Galore! on collection 3: trimmed reads**.
 - Follow the steps for **Run FastQC** above, except select the trimmed reads generated in the previous step as the input to **FastQC**
