@@ -98,7 +98,7 @@ JBrowse is a convenient tool that allows viewing of alignments, genomes and gene
 - The **SRR15607266** shows each aligned read, coloring forward and reverse reads in blue and red, respectively, and indicating mismatches with the reference genome. Information about individual reads is available by clicking on the read.
 
 - We can check other positions to confirm that we have a delta variant sample:
-  -P681R: 23,606 
-  -L452R: 22,919
+  - P681R: 23,606 
+  - L452R: 22,919
 
 [Previous: Process Raw Reads](02_Process_raw_reads.md)
