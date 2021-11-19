@@ -24,8 +24,12 @@ To run BWA:
 - Check that your tool is configured as below
 - Click **Execute**
 
-<img src="../img/align/bwa.png" width="800">*Configuration of BWA*
-
+<p align="center">
+<img src="../img/align/bwa.png" width="800">
+</p>
+<p align="center">
+*Configuration of BWA*
+</p>
 
 ## SAM format
 BWA produces a file in Sequence Alignment Map (SAM) format or the compressed version BAM.
