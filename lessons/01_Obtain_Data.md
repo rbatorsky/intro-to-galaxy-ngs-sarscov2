@@ -30,62 +30,30 @@ The [US National Center for Biotechnology Information](https://www.ncbi.nlm.nih.
 Our dataset is a SARS-CoV-2 Next Generation Sequencing sample. In this section we'll obtain our reference data and our NGS reads in preparation for alignment.
 
 
-### Import the SARS-CoV2 genome and gene annotation from NCBI
-- On the left hand side tool panel, click the **Upload icon**
+### Import the SARS-CoV2 genome and gene annotation from a Shared Data library on our server
+- On the top menu bar, click **Shared Data** and select **Data Libraries**
+- Select **sars-cov-2 genome and annotation**
+- Select both files by checking the box next to Name (or checking box next two both files)
+- Just under the top menu bar, next to the search bar, click **Export to History** and select **As Datasets**
+- In the **Import into History** keep the current Selected History and click **Import**
+- Click on **Galaxy Tufts** on the top left to go back to the main panel
 
-<img src="../img/data/upload.png" width="200">
-
-- Click **Paste/Fetch data**
-
-- Paste the following URLs in the grey box:
-
-```
-https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.fna.gz
-https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.gff.gz
-```
-
-- This is what you should see:
-
-<img src="../img/data/upload_final.png" width="700">
-
-- Click **Start** followed by **Close**
-
-- Two jobs will appear in the History, Grey (pending) -> Orange (running) -> Green (complete).
-
-- Rename the genome and give the file the correct Datatype. A datatype in Galaxy determines how tools will handle Datasets.
-  - On the green box for the file ending in fna.gz, click on the **pencil icon**
-  - replacing the URL in the name with "genome"
-  - clicking **Save**
-  - Click on the **Datatypes** tab, and under **New Type** type fasta (Note: careful not to select the datatype fasta.gz)
-  - Click **Change Datatype**
-
-- Rename the genes and give the file the correct Datatype
-  - On the green box for the file ending in gff.gz, click on the **pencil icon**
-  - Replacing the URL in the name with "genes"
-  - clicking **Save**
-  - Click on the **Datatypes** tab, and under **New Type** type gff3 and select it from the dropdown menu (Note: careful not to select the datatype gff3.gz)
-  - Click **Change Datatype**
-
-- Here is what you should see in your History
-
-<img src="../img/data/history_1.png" width="200">
-
+You’ll see two datasets in your history. 
+<p align="center">
+<img src="../img/data/import_from_shared.png" width="200">
+</p>
 
 ### Fasta Format
-The virus genome is in Fasta format.
-Fasta format has two parts, a sequence identifier preceeded by a ">" symbol, followed by the sequence on subsequent lines.
-You can see a preview of it by clicking on the **genome** dataset in the History panel.
+The virus genome is in gzipped fasta format with the extension **fna.gz**. Fasta format has two parts, a sequence identifier preceeded by a ">" symbol, followed by the sequence on subsequent lines. You can see a preview of it by clicking on the **GCF_009858895.2_ASM985889v3_genomic.fna.gz** dataset in the History panel.
 
 <img src="../img/data/genome_view_2.png" width="900">
 
 ### GFF Format
 The Generic Feature Format (GFF) file tells us where features such as genes and exons are located in the reference genome.
-To preview the GFF file, click on the  <img src="../img/eye.png" width="15"> on the **genes** dataset.
+To preview the GFF file, click on the  <img src="../img/eye.png" width="15"> on the **GCF_009858895.2_ASM985889v3_genomic.gff** dataset.
 Note that we must always be sure that our gene information and genome come from the same source.
 
 <img src="../img/data/gff_view.png" width="900">
-
-
 
 ## Step 3: Import NGS sequencing data from Sequence Read Archive
 
