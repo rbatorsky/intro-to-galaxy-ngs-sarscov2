@@ -72,10 +72,11 @@ JBrowse is a convenient tool that allows viewing of alignments, genomes and gene
 
 ### Open JBrowse viewer
 - Once the job is complete (green) click the <img src="../img/eye.png" width="15"> icon on the JBrowse dataset.
-- In the **Available Tracks** panel select **genes uncompressed**.
+- In the **Available Tracks** panel select **genes uncompressed**
 <p align="center">
 <img src="../img/align/available_tracks.png" width="200">
 </p>
+
 - In the center panel, you will see genome and gene features. We'll click and drag on the Genome coordinates bar in order to zoom in on the S protein region indicated below.
 <p align="center">
 <img src="../img/align/view_1.png" width="1000">
