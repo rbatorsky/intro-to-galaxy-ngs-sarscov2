@@ -81,6 +81,7 @@ JBrowse is a convenient tool that allows viewing of alignments, genomes and gene
 <img src="../img/align/view_1.png" width="1000">
 </p>
 - One can also type exact coordinates into the search bar. After the colon, type 22,991 and hit enter.
+
 <p align="center">
 <img src="../img/align/view_2.png" width="1000">
 </p>
