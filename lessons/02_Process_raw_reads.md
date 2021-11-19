@@ -25,7 +25,9 @@ The [Introduction Slides](../slides/workshop_22Nov21.pdf) give an overview of th
 - Scroll down and click **Execute**.The job should first appear orange and then green after a minute or so.
 - The result will be two lists, one containing the raw data and one the webpage (html) results for convenient viewing in the browser.
 
-<img src="../img/process/fastqc2.png" width="200">
+<p align="center">
+<img src="../img/process/fastqc2.png" width="250">
+</p>
 
 - Click to expand the second list **FastQC on collection 3: Webpage**
 - Click on the collection **SRR15607266**
