@@ -89,6 +89,7 @@ JBrowse is a convenient tool that allows viewing of alignments, genomes and gene
 - This region contains one of the 4 SNP that differentiate the delta from the alpha variant (T478K). To see if this sample contains the SNP, select the two remaining tracks 
   - SRR15607266
   - SRR15607266 - SNPs/Coverage
+  
 - We should see one variant represented both in the aligned reads as well as the coverage track.
 <p align="center">
 <img src="../img/align/view_3.png" width="1000">
