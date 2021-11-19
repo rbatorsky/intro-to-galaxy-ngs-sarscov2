@@ -36,7 +36,7 @@ Our dataset is a SARS-CoV-2 Next Generation Sequencing sample. In this section w
 - Select both files by checking the box next to Name
 
 <p align="center">
-<img src="../img/data/select_both.png" width="200">
+<img src="../img/data/select_both.png" width="300">
 </p>
 
 - Just under the top menu bar, next to the search bar, click **Export to History** and select **As Datasets**
