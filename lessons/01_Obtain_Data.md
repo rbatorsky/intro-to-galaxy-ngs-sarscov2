@@ -34,8 +34,9 @@ Our dataset is a SARS-CoV-2 Next Generation Sequencing sample. In this section w
 - On the top menu bar, click **Shared Data** and select **Data Libraries**
 - Select **sars-cov-2 genome and annotation**
 - Select both files by checking the box next to Name
+
 <p align="center">
-<img src="../img/data/import_from_shared.png" width="200">
+<img src="../img/data/select_both.png" width="200">
 </p>
 
 - Just under the top menu bar, next to the search bar, click **Export to History** and select **As Datasets**
