@@ -8,8 +8,7 @@ Read Alignment is the process of comparing short reads with a reference genome t
 The naive method of comparing each read in our dataset to each position in the reference sequence is too slow. Therefore, **BWA** builds an index of the reference sequence, which can be thought of as a lookup table for substrings present in our reference sequence. A short read can be compared to this lookup table in order to find potential matches.
 
 <p align="center">
-<img src="../img/align/bwa_index.png" width="500">*BWA builds an index of the reference sequence. For more information on the Burrows-Wheeler Transform, see [Stanford CS262 Lecture](http://web.stanford.edu/class/cs262/presentations/lecture4.pdf
-)*
+<img src="../img/align/bwa_index.png" width="500">*BWA builds an index of the reference sequence. For more information on the Burrows-Wheeler Transform, see [Stanford CS262 Lecture](http://web.stanford.edu/class/cs262/presentations/lecture4.pdf)*
 </p>
 
 To run BWA:
