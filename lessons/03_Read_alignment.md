@@ -1,7 +1,6 @@
 # Read Alignment
 
-Read Alignment is the process of comparing short reads with a reference genome to find the best-matching position. The Burrows-Wheeler Aligner (**BWA**) is a fast and accurate tool for both short and long read alignment, and **JBrowse** is a tool that enables viewing of the alignment results in Galaxy.
-
+Read Alignment is the process of comparing short reads with a reference genome to find the best-matching position. The Burrows-Wheeler Aligner (**BWA**) is a fast and accurate tool for both short and long read alignment, and **JBrowse** is a tool that enables viewing of the alignment results within the Galaxy interface.
 
 ## Step 1: BWA alignmnent
 
@@ -15,7 +14,7 @@ The naive method of comparing each read in our dataset to each position in the r
 BWA builds an index of the reference sequence.
 </p>
 
-To run BWA:
+###To run BWA:
 - In the Tools panel search bar, type **BWA** and under the **Mapping** section, select **Map with BWA**
 - Under **Will you select a reference genome from your history or use a built-in index?** select **Use a genome from history and build index**.
 - Under **Use the following dataset as the reference sequence** select **1:genome (as fasta)**
@@ -28,10 +27,10 @@ To run BWA:
 <img src="../img/align/bwa.png" width="800">
 </p>
 <p align="center">
-*Configuration of BWA*
+Configuration of BWA
 </p>
 
-## SAM format
+### SAM format
 BWA produces a file in Sequence Alignment Map (SAM) format or the compressed version BAM.
 
 <img src="../img/sam_format.jpeg" width="800">
@@ -40,8 +39,17 @@ BWA produces a file in Sequence Alignment Map (SAM) format or the compressed ver
 
 ## Downsample BAM for quicker viewing
 
+Before we view our alignment, we'll downsample our BAM file to contain only a fraction of the original reads. This will be sufficient to view major variants present and confirm that we have sequenced the delta variant. NOTE: An alternative to this would be to increase the **Maximum size of BAM chunks** to 20,000,000 in the **JBrowse** settings in the following section, which will result in much slower loading of the sample.
 
-## View bam file using JBrowse
+- In the Tool panel search bar, type "downsample"
+- Under **Picard**, select **Downsample SAM/BAM**
+- In the Main panel, under **Select SAM/BAM dataset or dataset collection** click the folder icon <img src="../img/process/download.png" width="15"> and select **15: Map with BWA on collection 3**
+- Under **Probability (between 0 and 1) that any given read will be kept** type 0.1 and press enter
+- Click **Execute**
+
+## View Downsampled BAM file using JBrowse
+
+JBrowse is a conveniet tool that allows viewing of alignments, genomes and gene annotation within the Galaxy interface.
 
 - In the **Tools** panel search bar, type **JBrowse** and select **JBrowse genome browser**
 - Under **Reference genome to display** select **Use a genome from history**
@@ -53,7 +61,7 @@ BWA produces a file in Sequence Alignment Map (SAM) format or the compressed ver
   - First we'll add the GFF track:  Under **Track Type** select **GFF/GFF3/BED Features** and under **GFF/GFF3/BED Track Data** select **genes**.
   - Under **Track Category** type “bam files”
   - Next, well add the BAM track, so again click **Insert Annotation Track**
-  - Select track type **BAM Pileups** and under **BAM Track Data** click the folder icon and select the list **15: Map with BWA on collection 3**
+  - Select track type **BAM Pileups** and under **BAM Track Data** click the folder icon <img src="../img/process/download.png" width="15"> and select the list **15: Map with BWA on collection 3**
   - Under **Autogenerate SNP Track** click **Yes**
 
 - Finally, run the job:
