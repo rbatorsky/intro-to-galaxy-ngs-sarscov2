@@ -1,6 +1,6 @@
 # Obtaining the Reference data and NGS Sequencing data from public repositories
 
-The introductory [Slides](../slides/workshop_22Nov21.pdf) give an overview of our goals.
+The [US National Center for Biotechnology Information](https://www.ncbi.nlm.nih.gov/) hosts repositories for many types of biomedical and genomics information. Today we'll retrieve reference data from the [Genomes Database FTP server](https://ftp.ncbi.nlm.nih.gov/genomes/) as well as the [Sequence Read Archive](https://www.ncbi.nlm.nih.gov/sra) 
 
 ## Step 1: Galaxy Setup
 
@@ -37,7 +37,7 @@ Our dataset is a SARS-CoV-2 Next Generation Sequencing sample. In this section w
 
 - Click **Paste/Fetch data**
 
-- We will download our reference data for the original SARS-CoV-2 genome from NCBI, via the commonly used  [https://ftp.ncbi.nlm.nih.gov/genomes/](https://ftp.ncbi.nlm.nih.gov/genomes/). Paste the following URLs in the grey box:
+- Paste the following URLs in the grey box:
 
 ```
 https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.fna.gz
