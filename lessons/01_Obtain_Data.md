@@ -62,7 +62,7 @@ You can see a preview of it by clicking on the **genome** dataset in the History
 
 
 ### GFF Format
-The Generic Feature Format (GFF) file tells us where features such as genes and exons are located in the reference genome.
+The gene annotation file is in Generic Feature Format (GFF). This formet tells us where genes are located in the reference genome.
 To preview the GFF file, click on the  <img src="../img/eye.png" width="15"> on the **genes uncompressed** dataset.
 Note that we must always be sure that our gene information and genome come from the same source.
 
