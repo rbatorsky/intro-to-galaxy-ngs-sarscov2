@@ -1,23 +1,8 @@
 # Obtaining the Reference data and NGS Sequencing data from public repositories
 
-The [US National Center for Biotechnology Information](https://www.ncbi.nlm.nih.gov/) hosts repositories for many types of biomedical and genomics information. Today we'll retrieve reference data from the [Genomes Database FTP server](https://ftp.ncbi.nlm.nih.gov/genomes/) as well as the [Sequence Read Archive](https://www.ncbi.nlm.nih.gov/sra) 
+The [US National Center for Biotechnology Information](https://www.ncbi.nlm.nih.gov/) hosts repositories for many types of biomedical and genomics data. Today we'll retrieve reference data from the [Genomes Database FTP server](https://ftp.ncbi.nlm.nih.gov/genomes/) as well as the [Sequence Read Archive](https://www.ncbi.nlm.nih.gov/sra) 
 
 ## Step 1: Galaxy Setup
-
-### Log in to Galaxy
-- Connect to Tufts Network, either on campus or via VPN
-
-- Visit https://galaxy.cluster.tufts.edu/
-
-- Log in with you cluster username and password
-
-- In another browser window go to course website: 
-[https://rbatorsky.github.io/intro-to-galaxy-ngs-sarscov2/](https://rbatorsky.github.io/intro-to-galaxy-ngs-sarscov2/)
-
-- If you have one monitor, here is a suggested screen layout to follow the tutorial
-
-<img src="../img/data/two_screens.png" width="900">*Suggested screen layout*
-
 
 ### Create a new history
 - Click the **+** at the top of the history panel, on the right hand side of the screen

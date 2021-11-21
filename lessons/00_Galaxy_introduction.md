@@ -5,6 +5,20 @@ Galaxy is a web-based platform for running data analysis and integration, geared
 - Developed at Penn State, Johns Hopkins, OHSU and Cleveland Clinic with many more outside contributions
 - Large and extremely responsive community 
 
+## Log in to Galaxy
+- Connect to Tufts Network, either on campus or via VPN
+
+- Visit https://galaxy.cluster.tufts.edu/
+
+- Log in with you cluster username and password
+
+- In another browser window go to course website: 
+[https://rbatorsky.github.io/intro-to-galaxy-ngs-sarscov2/](https://rbatorsky.github.io/intro-to-galaxy-ngs-sarscov2/)
+
+- If you have one monitor, here is a suggested screen layout to follow the tutorial
+
+<img src="../img/data/two_screens.png" width="900">*Suggested screen layout*
+
 
 ## Galaxy on the Tufts University High Performance Compute (HPC) Cluster
 

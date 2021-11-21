@@ -41,6 +41,7 @@ BWA produces a BAM file, which is the compressed binary version of a Sequence Al
 Image Source https://www.samformat.info/
 </p>
 
+### (Optional) Run Samtools Flagstats or 
 
 ## Downsample BAM for quicker viewing
 
