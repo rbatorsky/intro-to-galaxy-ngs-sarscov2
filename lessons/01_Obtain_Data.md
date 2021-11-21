@@ -1,3 +1,6 @@
+```{r klippy, echo=FALSE, include=TRUE}
+klippy::klippy()
+```
 # Obtaining the Reference data and NGS Sequencing data from public repositories
 
 The [US National Center for Biotechnology Information](https://www.ncbi.nlm.nih.gov/) hosts repositories for many types of biomedical and genomics data. Today we'll retrieve reference data from the [Genomes Database FTP server](https://ftp.ncbi.nlm.nih.gov/genomes/) as well as the [Sequence Read Archive](https://www.ncbi.nlm.nih.gov/sra) 
@@ -23,7 +26,7 @@ Our dataset is a SARS-CoV-2 Next Generation Sequencing sample. In this section w
 - Click **Paste/Fetch data**
 - Paste the following URLs in the grey box:
 
-```
+```{r cars, class.source='klippy'}
 https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.fna.gz
 https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.gff.gz
 ```

@@ -23,8 +23,8 @@ Galaxy is a web-based platform for running data analysis and integration, geared
 
 ## Galaxy on the Tufts University High Performance Compute (HPC) Cluster
 
-- Our Galaxy server runs on the HPC cluster, storing data on HPC drives and using compute nodes and Slurm scheduler to run user jobs
-- In practice, this means that Tufts users have more resources on Tufts' Galaxy compared to public servers
+- Our Galaxy server runs on the HPC cluster, storing data on HPC drives and running user jobs on compute nodes
+- In practice, this means that Tufts users have more resources on Tufts' Galaxy compared to public Galaxyservers
 - We also have the ability to install and configure open source and custom tools
 - More information on getting access to Tufts Galaxy can be found on the [Research Technology website](https://it.tufts.edu/research-technology/bioinformatics/tufts-galaxy)
 
@@ -49,7 +49,7 @@ Galaxy is a web-based platform for running data analysis and integration, geared
 
 - Histories are where a dataset and a set of analysis are stored
 - Similar to a "working directory".
-- You can have multiple histories under the same account and you can view them all by clicking the **+** as shown below
+- You can have multiple histories under the same account and you can create a new one by clicking the **+** as shown below
 
 <img src="../img/galaxy_intro/viewhistory.png" width="700">
 
