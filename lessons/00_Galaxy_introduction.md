@@ -5,15 +5,16 @@ Galaxy is a web-based platform for running data analysis and integration, geared
 - Developed at Penn State, Johns Hopkins, OHSU and Cleveland Clinic with many more outside contributions
 - Large and extremely responsive community 
 
-## Log in to Galaxy
+## Log in to Galaxy and open workshop repository
 - Connect to Tufts Network, either on campus or via VPN
 
-- Visit https://galaxy.cluster.tufts.edu/
-
-- Log in with you cluster username and password
+- Using a Chrome browser, visit https://galaxy.cluster.tufts.edu
+  - Note: sometimes an incognito browser is needed
+  
+- Log in with your Tufts credentials
 
 - In another browser window go to course website: 
-[https://rbatorsky.github.io/intro-to-galaxy-ngs-sarscov2/](https://rbatorsky.github.io/intro-to-galaxy-ngs-sarscov2/)
+[https://rbatorsky.github.io/intro-to-galaxy-ngs-sarscov2](https://rbatorsky.github.io/intro-to-galaxy-ngs-sarscov2/)
 
 - If you have one monitor, here is a suggested screen layout to follow the tutorial
 
