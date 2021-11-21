@@ -54,8 +54,7 @@ https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM9858
 </p>
 
 ### Fasta Format
-The virus genome is in gzipped fasta format with the extension **fna.gz**.
-Fasta format has two parts, a sequence identifier preceeded by a ">" symbol, followed by the sequence on subsequent lines.
+The virus genome is in fasta format. Fasta format has two parts, a sequence identifier preceeded by a ">" symbol, followed by the sequence on subsequent lines.
 You can see a preview of it by clicking on the **genome** dataset in the History panel.
 <p align="center">
 <img src="../img/data/genome_view_2.png" width="900">
