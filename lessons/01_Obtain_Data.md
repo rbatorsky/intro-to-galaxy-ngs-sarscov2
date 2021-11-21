@@ -38,13 +38,13 @@ https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM9858
 
 - Rename the genome file
   - On the green box for the file ending in fna.gz, click on the <img src="../img/pencil.png" width="15">
-  - replacing the URL in the name with "genome"
-  - clicking **Save**
+  - Under **Name**, replace the URL in the name with "genome"
+  - Click **Save**
 
 - Rename the gene annotation file and decompress
   - On the green box for the file ending in gff.gz, click on the <img src="../img/pencil.png" width="15">
-  - Replacing the URL in the name with "genes"
-  - clicking **Save**
+  - Under **Name**, replace the URL in the name with "genes"
+  - Click **Save**
   - Click on the **Convert** tab, and under **Name** select **Convert compressed file to uncompressed**
   - Click **Convert Datatype** to generate a new dataset with the uncompressed file
 
