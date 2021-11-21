@@ -82,7 +82,7 @@ We are interested in obtaining reads from the sample [Viral genomic RNA sequenci
 We'll download the data from Sequence Read Archive using a Galaxy tool called **SRA Toolkit**.
 
 - In the Tool panel search box, search for a tool called "fasterq" and click on the tool under **SRA toolkit** called **Faster Download and Extract Reads in FASTQ**
-- Under **Accession** enter `SRR15607266`
+- Under **Accession** paste the accession number `SRR15607266`
 - Click **Execute**
 
 <p align="center">
@@ -94,19 +94,15 @@ We'll download the data from Sequence Read Archive using a Galaxy tool called **
   - Other data: Empty, but can contain experiment metadata
   - Single-end data: Empty, since this experiment has no single-end files
   - Paired-end data: Two files, containing the forward and reverse reads for this sample 
-  
+
+<p align="center">
 <img src="../img/data/fasterq_result.png" width="200">
+</p>
 
 ### Fastq format
 Fastq format is a way to store both sequence data and information about the quality of each sequenced position.
 
-- To view:
-  - Click on the list **Pair-end data (fasterq-dump)** and the sublist **SRR15607266** to expand the sample, you’ll see 2 sequencing files **forward** and **reverse**
-  - Click on the <img src="../img/eye.png" width="15"> on the first sequence file **forward** and look at the fastq reads
-  - The paired end data contains two files, forward and reverse reads for our sample.
-
-
-The first 4 lines constitute the first sequencing read:
+Each block of 4 lines contains one sequencing reads, for example:
 ```
 @SRR15607266.1 1 length=76
 NTTATCTACTTTTATTTCAGCAGCTCGGCAAGGGTTTGTTGATTCAGATGTAGAAACTAAAGATGTTGTTGAATGT
@@ -133,6 +129,9 @@ A quality score is a prediction of the probability of an error in base calling:
 
 Going back to our read, we can see that for most of our read the quality score is "G" –> "Q" =  38 -> Probability < 1/1000 of an error.
 
+## Preview Fastq data
+- Click on the list **Pair-end data (fasterq-dump)** and the sublist **SRR15607266** to expand the sample, you’ll see 2 sequencing files **forward** and **reverse**
+- Click on the <img src="../img/eye.png" width="15"> on the first sequence file **forward** and look at the fastq reads
 
 [Next: Process Raw Reads](02_Process_raw_reads.md)
 
