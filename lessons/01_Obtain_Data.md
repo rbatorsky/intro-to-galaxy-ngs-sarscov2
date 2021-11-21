@@ -21,7 +21,7 @@ Our dataset is a SARS-CoV-2 Next Generation Sequencing sample. In this section w
 <img src="../img/data/upload.png" width="200">
 </p>
 - Click **Paste/Fetch data**
-- Paste the following URLs in the grey box:
+- Copy the following URLs and paste in the grey box:
 
 ```
 https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.fna.gz
@@ -37,12 +37,12 @@ https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM9858
 - Two jobs will appear in the History, Grey (pending) -> Orange (running) -> Green (complete).
 
 - Rename the genome file
-  - On the green box for the file ending in fna.gz, click on the **pencil icon**
+  - On the green box for the file ending in fna.gz, click on the <img src="../img/pencil.png" width="15">
   - replacing the URL in the name with "genome"
   - clicking **Save**
 
 - Rename the gene annotation file and decompress
-  - On the green box for the file ending in gff.gz, click on the **pencil icon**
+  - On the green box for the file ending in gff.gz, click on the <img src="../img/pencil.png" width="15">
   - Replacing the URL in the name with "genes"
   - clicking **Save**
   - Click on the **Convert** tab, and under **Name** select **Convert compressed file to uncompressed**
