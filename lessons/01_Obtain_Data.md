@@ -26,7 +26,7 @@ Our dataset is a SARS-CoV-2 Next Generation Sequencing sample. In this section w
 - Click **Paste/Fetch data**
 - Paste the following URLs in the grey box:
 
-```{r cars, class.source='klippy'}
+```
 https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.fna.gz
 https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.gff.gz
 ```
