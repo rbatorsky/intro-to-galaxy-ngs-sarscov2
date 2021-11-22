@@ -4,7 +4,7 @@ Read Alignment is the process of comparing short reads with a reference genome t
 
 ## Step 1: BWA alignmnent
 
-The naive method of comparing each read in our dataset to each position in the reference sequence is too slow. Therefore, **BWA** builds an index of the reference sequence, which can be thought of as a lookup table for substrings present in our reference sequence. A short read can be compared to this lookup table in order to find potential matches.For more information on the Burrows-Wheeler Transform, see [Stanford CS262 Lecture](http://web.stanford.edu/class/cs262/presentations/lecture4.pdf)*
+The naive method of comparing each read in our dataset to each position in the reference sequence is too slow. Therefore, **BWA** builds an index of the reference sequence, which can be thought of as a lookup table for substrings present in our reference sequence. A short read can be compared to this lookup table in order to find potential matches. For more information on the Burrows-Wheeler Transform, see [Stanford CS262 Lecture](http://web.stanford.edu/class/cs262/presentations/lecture4.pdf)*
 
 <p align="center">
 <img src="../img/align/bwa_index.png" width="500">
@@ -41,7 +41,19 @@ BWA produces a BAM file, which is the compressed binary version of a Sequence Al
 Image Source https://www.samformat.info/
 </p>
 
-### (Optional) Run Samtools Flagstats or 
+### (Optional) Run **Samtools Flagstats** to view aligment metrics
+- In the Tools panel search bar, type "flagstat" and under the **SAMTOOLS** section, select **Samtools flagstat**
+- Under **BAM File to report statistics of** select **Map with BWA on collection 3**.
+- Click **Execute**
+- Once the job is completed, you can view the results by clicking on the job, and clicking again on the <img src="../img/eye.png" width="15"> icon in the completed **SRR15607266** dataset.
+- The result is below and can be used to diagnose problems with the alignment quality
+<p align="center">
+<img src="../img/align/flagstat.png" width="800">
+</p>
+<p align="center">
+Result of Samtools Flagstat
+</p>
+
 
 ## Downsample BAM for quicker viewing
 

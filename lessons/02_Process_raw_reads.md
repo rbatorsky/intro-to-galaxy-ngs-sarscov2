@@ -12,7 +12,7 @@ FastQC provides several modules to asses the quality of sequencing data.
 - Per base sequence content
 - Adapters in Sequence
 
-The [Introduction Slides](../slides/workshop_22Nov21.pdf) give an overview of these modules in the context of RNA sequencing data.
+The [FastQC Slides](../slides/intro_ngs_galaxy_sarscov2_1hr_fastqc.pdf) give an overview of these modules in the context of RNA sequencing data.
 
 ### Run FastQC
 

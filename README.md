@@ -11,12 +11,12 @@ The workshop has the following steps
 <img src="img/intro/workflow.png" width="300">
 
 ### Materials Needed
-- Chrome web browser
+- Chrome web browserworkshop
 - Account on [Tufts High Performance Compute Cluster](https://it.tufts.edu/research-technology/high-performance-computing)
 - [VPN](https://access.tufts.edu/vpn) if accessing the HPC from off campus
 
 ## Table of Contents
-- [Next: Introduction Slides](../slides/workshop_22Nov21.pdf)
+- [Next: Introduction Slides](../slides/intro_ngs_galaxy_sarscov2_1hr_intro.pdf)
 - [Introduction to Galaxy](lessons/00_Galaxy_introduction.md)
 - [Obtain Data](lessons/01_Obtain_Data.md)
 - [Process Raw Reads](lessons/02_Process_raw_reads.md)
