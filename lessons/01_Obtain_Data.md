@@ -133,6 +133,6 @@ Going back to our read, we can see that for most of our read the quality score i
 - Click on the list **Pair-end data (fasterq-dump)** and the sublist **SRR15607266** to expand the sample, you’ll see 2 sequencing files **forward** and **reverse**
 - Click on the <img src="../img/eye.png" width="15"> on the first sequence file **forward** and look at the fastq reads
 
-[Next: Process Raw Reads](02_Process_raw_reads.md)
-
+[(Optional Next:) Process Raw Reads](02_Process_raw_reads.md)
+[Next: Read Alignment](03_Read_alignment.md)
 [Previous: Introduction to Galaxy](00_Galaxy_introduction.md)

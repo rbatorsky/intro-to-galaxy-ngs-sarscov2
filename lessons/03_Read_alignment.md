@@ -42,7 +42,7 @@ Image Source https://www.samformat.info/
 </p>
 
 ### (Optional) Run **Samtools Flagstats** to view aligment metrics
-- In the Tools panel search bar, type "flagstat" and under the **SAMTOOLS** section, select **Samtools flagstat**
+- In the Tools panel search bar, type **flagstat** and under the **SAMTOOLS** section, select **Samtools flagstat**
 - Under **BAM File to report statistics of** select **Map with BWA on collection 3**.
 - Click **Execute**
 - Once the job is completed, you can view the results by clicking on the job, and clicking again on the <img src="../img/eye.png" width="15"> icon in the completed **SRR15607266** dataset.
@@ -90,18 +90,18 @@ JBrowse is a convenient tool that allows viewing of alignments, genomes and gene
 <img src="../img/align/available_tracks.png" width="200">
 </p>
 
-- In the center panel, you will see genome and gene features. We'll click and drag on the Genome coordinates bar in order to zoom in on the S protein region indicated below.
+- In the center panel, you will see genome and gene features. We'll click and drag on the Genome coordinates bar (indicated in the figure below) from approximately position 21,500-25,4500 in order to zoom in on the Spike protein region (called surface glycoprotein). 
 <p align="center">
 <img src="../img/align/view_1.png" width="1000">
 </p>
 
-- One can also type exact coordinates into the search bar. After the colon, type 22,991 and hit enter.
+- One can also type exact coordinates into the search bar (indicated in the figure below) to zoom in. Type in `22,995` in the search bar and hit enter.
 <p align="center">
 <img src="../img/align/view_2.png" width="1000">
 </p>
 
-- This shows us now a close up of our reference sequence, both forward and reverse, as well as three reading frames.
-- This region contains one of the 4 SNP that differentiate the delta from the alpha variant (T478K). To see if this sample contains the SNP, select the two remaining tracks 
+- Now we see a close-up of our reference sequence. The two center tracks show us the forward and reverse nucleotide sequence. Three reading frames for the reference sequence are shown in each direction.
+- This region contains one of the 4 SNP that differentiate the delta variant from the originally charachterized sequence. The Amino acid change is T478K, which corresponds to a C>A mutation at nucleotide position 22,995. To see if this sample contains the mutation, select the two remaining tracks 
   - SRR15607266
   - SRR15607266 - SNPs/Coverage
   - We should see one variant represented both in the aligned reads as well as the coverage track.
@@ -112,8 +112,7 @@ JBrowse is a convenient tool that allows viewing of alignments, genomes and gene
 - The **SRR15607266 - SNPs/Coverage** track plots the number of reads aligned at each position, and additionally shows SNP that are present in >20% of the aligned reads.
 - The **SRR15607266** shows each aligned read, coloring forward and reverse reads in blue and red, respectively, and indicating mismatches with the reference genome. Information about individual reads is available by clicking on the read.
 
-- We can check other positions to confirm that we have a delta variant sample:
-  - P681R: 23,606 
-  - L452R: 22,919
-
+- We can check another position to confirm that we have a delta variant sample:
+  - L452R: type `22,917` in search bar
+  
 [Previous: Process Raw Reads](02_Process_raw_reads.md)
