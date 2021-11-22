@@ -81,7 +81,8 @@ JBrowse is a convenient tool that allows viewing of alignments, genomes and gene
   - Next, well add the BAM track, so again click **Insert Annotation Track**
   - Select track type **BAM Pileups** and under **BAM Track Data** click the folder icon <img src="../img/download.png" width="15"> and select the list **Downsample SAM/BAM on collection 15: downsampled BAM**
   - Under **Autogenerate SNP Track** click **Yes** (SNP = Single Nucleotide Polymorphism. This will enable us to view changes in the sequence data with respect to the reference sequence)
-  - Scroll down and click **Execute**.
+  - Scroll down and click **Execute**
+  - When the job is complete, it will show a new dataset in your history with the downsampled BAM. 
 
 ### Open JBrowse viewer
 - Once the job is complete (green) click the <img src="../img/eye.png" width="15"> icon on the JBrowse dataset.
@@ -101,7 +102,7 @@ JBrowse is a convenient tool that allows viewing of alignments, genomes and gene
 </p>
 
 - Now we see a close-up of our reference sequence. The two center tracks show us the forward and reverse nucleotide sequence. Three reading frames for the reference sequence are shown in each direction.
-- This region contains one of the 4 SNP that differentiate the delta variant from the originally charachterized sequence. The Amino acid change is T478K, which corresponds to a C>A mutation at nucleotide position 22,995. To see if this sample contains the mutation, select the two remaining tracks 
+- This region contains one of the 4 mutations that differentiate the delta variant from the originally characterized sequence. The amino acid change is a T>K change at protein position 478, which corresponds to a C>A SNP at nucleotide position 22,995. To see if this sample contains the mutation, select the two remaining tracks 
   - SRR15607266
   - SRR15607266 - SNPs/Coverage
   - We should see one variant represented both in the aligned reads as well as the coverage track.
