@@ -77,7 +77,6 @@ JBrowse is a convenient tool that allows viewing of alignments, genomes and gene
   - Under **Track Group** click **Insert Track Group**
   - Under **Annotation Track** click **Insert Annotation Track**
   - First we'll add the GFF track:  Under **Track Type** select **GFF/GFF3/BED Features** and under **GFF/GFF3/BED Track Data** select **genes**.
-  - Under **Track Category** type “bam files”
   - Next, well add the BAM track, so again click **Insert Annotation Track**
   - Select track type **BAM Pileups** and under **BAM Track Data** click the folder icon <img src="../img/download.png" width="15"> and select the list **Downsample SAM/BAM on collection 15: downsampled BAM**
   - Under **Autogenerate SNP Track** click **Yes** (SNP = Single Nucleotide Polymorphism. This will enable us to view changes in the sequence data with respect to the reference sequence)
@@ -91,7 +90,7 @@ JBrowse is a convenient tool that allows viewing of alignments, genomes and gene
 <img src="../img/align/available_tracks.png" width="200">
 </p>
 
-- In the center panel, you will see genome and gene features. We'll click and drag on the Genome coordinates bar (indicated in the figure below) from approximately position 21,500-25,4500 in order to zoom in on the Spike protein region (called surface glycoprotein). 
+- In the center panel, you will see genome and gene features. We'll click and drag on the Genome coordinates bar (indicated in the figure below) from approximately position 21,500-25,450 in order to zoom in on the Spike protein region (called surface glycoprotein). 
 <p align="center">
 <img src="../img/align/view_1.png" width="1000">
 </p>
