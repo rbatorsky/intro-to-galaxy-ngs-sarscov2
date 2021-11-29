@@ -134,5 +134,8 @@ Going back to our read, we can see that for most of our read the quality score i
 - Click on the <img src="../img/eye.png" width="15"> on the first sequence file **forward** and look at the fastq reads
 
 [(Optional Next:) Process Raw Reads](02_Process_raw_reads.md)
+
 [Next: Read Alignment](03_Read_alignment.md)
+
 [Previous: Introduction to Galaxy](00_Galaxy_introduction.md)
+
